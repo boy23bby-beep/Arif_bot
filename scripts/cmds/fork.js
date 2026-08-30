@@ -3,8 +3,8 @@ const axios = require("axios");
 module.exports = {
   config: {
     name: "fork",
-    version: "0.0.7",
-    author: "Azadx69x",
+    version: "0.0.1",
+    author: "ARIF",
     countDown: 3,
     role: 0,
     category: "system",
@@ -17,13 +17,13 @@ module.exports = {
 
   onStart: async function ({ message }) {
     try {
-      const repo = "ncazad/X69X-BOT-V3";
+      const repo = "boy23bby-beep/Arif_bot";
 
       const res = await axios.get(`https://api.github.com/repos/${repo}`);
       const data = res.data;
 
       const text = `
-𝐗69𝐗 𝐁𝐎𝐓 𝐕3
+ARIF BOT
 𝐔𝐩𝐝𝐚𝐭𝐞 𝐅𝐨𝐫𝐤
 
 📦 𝐍𝐚𝐦𝐞: ${data.name}
