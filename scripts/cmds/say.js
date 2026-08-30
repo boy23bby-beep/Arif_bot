@@ -47,7 +47,7 @@ module.exports = {
   config: {
     name: "say",
     version: "2.0.0",
-    author: "Azadx69x",
+    author: "ARIF",
     countDown: 5,
     role: 0,
     description: "Text to speech with random reply feature",

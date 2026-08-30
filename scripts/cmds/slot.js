@@ -2,7 +2,7 @@ module.exports = {
   config: {
     name: "slot",
     version: "0.0.7",
-    author: "Azadx69x",
+    author: "ARIF",
     description: {
       role: 0,
       en: "🎰 𝐀 𝐟𝐚𝐧𝐜𝐲 𝐬𝐥𝐨𝐭 𝐦𝐚𝐜𝐡𝐢𝐧𝐞 𝐠𝐚𝐦𝐞 𝐰𝐢𝐭𝐡 𝐣𝐚𝐜𝐤𝐩𝐨𝐭𝐬, 𝐛𝐨𝐧𝐮𝐬𝐞𝐬",

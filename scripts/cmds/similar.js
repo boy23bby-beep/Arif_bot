@@ -5,7 +5,7 @@ module.exports = {
     config: {
         name: "similar",
         version: "1.1.0",
-        author: "Azadx69x | Fix: Fahad",
+        author: "ARIF | Fix: Fahad",
         countDown: 8,
         role: 0,
         description: "🔍 Search similar images using reverse image search",

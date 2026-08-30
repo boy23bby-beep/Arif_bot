@@ -5,7 +5,7 @@ module.exports = {
     name: "font",
     aliases: ["fonts"],
     version: "0.0.7",
-    author: "Azadx69x",
+    author: "ARIF",
     role: 0,
     shortDescription: "🎨 Convert text to stylish",
     longDescription: "Generate stylish fonts",
@@ -78,7 +78,7 @@ async function convertFont(api, threadID, messageID, styleNum, text) {
 
 async function showFontList(threadID, api, messageID) {
   let message = `╭━━━━━━━━━━━━━━━╮\n│    𝗔𝗟𝗟 𝗙𝗢𝗡𝗧 𝗦𝗧𝗬𝗟𝗘𝗦\n├━━━━━━━━━━━━━━━┤\n`;
-  const previewText = "Azadx69x";
+  const previewText = "ARIF";
 
   for (let i = 1; i <= 30; i++) {
     try {

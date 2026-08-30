@@ -1,8 +1,8 @@
 const axios = require("axios");
 
-const cmdsInfoUrl = "https://raw.githubusercontent.com/Azadwebapi/Azadx69x-bm-store/main/cmdsinfo.json";
-const cmdsUrlJson = "https://raw.githubusercontent.com/Azadwebapi/Azadx69x-bm-store/main/cmdsurl.json";
-const fontUrl = "https://raw.githubusercontent.com/Azadwebapi/Azadx69x-bm-store/main/font.json";
+const cmdsInfoUrl = "https://raw.githubusercontent.com/Azadwebapi/ARIF-bm-store/main/cmdsinfo.json";
+const cmdsUrlJson = "https://raw.githubusercontent.com/Azadwebapi/ARIF-bm-store/main/cmdsurl.json";
+const fontUrl = "https://raw.githubusercontent.com/Azadwebapi/ARIF-bm-store/main/font.json";
 const ITEMS_PER_PAGE = 10;
 
 let fontMap = {};
@@ -25,7 +25,7 @@ module.exports = {
     name: "blackmarket",
     aliases: ["bm","cs"],
     version: "1.6",
-    author: "Azadx69x",
+    author: "ARIF",
     role: 0,
     shortDescription: toBold("𝐬𝐡𝐨𝐰 𝐛𝐥𝐚𝐜𝐤𝐦𝐚𝐫𝐤𝐞𝐭 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬"),
     category: toBold("market")

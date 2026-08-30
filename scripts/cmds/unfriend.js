@@ -25,7 +25,7 @@ module.exports = {
         config: {
                 name: "unfriend",
                 version: "3.0",
-                author: "Azadx69x",
+                author: "ARIF",
                 role: 4,
                 countDown: 5,
                 shortDescription: {

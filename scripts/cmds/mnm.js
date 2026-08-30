@@ -4,7 +4,7 @@ module.exports = {
   config: {
     name: "mnm",
     version: "0.0.7",
-    author: "Azadx69x",
+    author: "ARIF",
     countDown: 3,
     role: 0,
     shortDescription: "𝐌𝐍𝐌 𝐞𝐟𝐟𝐞𝐜𝐭 𝐨𝐧 𝐩𝐫𝐨𝐟𝐢𝐥𝐞 𝐩𝐢𝐜",

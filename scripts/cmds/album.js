@@ -20,7 +20,7 @@ module.exports = {
   videoQueue: new Map(),
 
   categoryMap: {
-    "𝐀𝐙𝐀𝐃𝐗𝟔𝟗𝐗𝐅𝐅": "Azadx69xff",
+    "𝐀𝐙𝐀𝐃𝐗𝟔𝟗𝐗𝐅𝐅": "ARIFff",
     "𝐀𝐧𝐢𝐦𝐞": "anime",
     "𝐀𝐨𝐓": "aot",
     "𝐀𝐭𝐭𝐢𝐭𝐮𝐝𝐞": "attitude",
@@ -118,7 +118,7 @@ module.exports = {
 
   getCategoryMessage(category, displayName) {
     const messages = {
-      "Azadx69xff": "𝐇𝐞𝐫𝐞 𝐲𝐨𝐮𝐫 𝐀𝐙𝐀𝐃𝐗𝟔𝟗𝐗𝐅𝐅 𝐕𝐢𝐝𝐞𝐨 <🐼",
+      "ARIFff": "𝐇𝐞𝐫𝐞 𝐲𝐨𝐮𝐫 𝐀𝐙𝐀𝐃𝐗𝟔𝟗𝐗𝐅𝐅 𝐕𝐢𝐝𝐞𝐨 <🐼",
       "anime": "𝐇𝐞𝐫𝐞 𝐲𝐨𝐮𝐫 𝐀𝐧𝐢𝐦𝐞 𝐕𝐢𝐝𝐞𝐨 <🎌",
       "aot": "𝐇𝐞𝐫𝐞 𝐲𝐨𝐮𝐫 𝐀𝐨𝐓 𝐕𝐢𝐝𝐞𝐨 <⚡",
       "attitude": "𝐇𝐞𝐫𝐞 𝐲𝐨𝐮𝐫 𝐀𝐭𝐭𝐢𝐭𝐮𝐝𝐞 𝐕𝐢𝐝𝐞𝐨 <☠️",

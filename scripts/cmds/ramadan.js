@@ -7,7 +7,7 @@ module.exports = {
   config: {
     name: "ramadan",
     version: "0.0.9",
-    author: "Azadx69x",
+    author: "ARIF",
     role: 0,
     shortDescription: "Shows Ramadan timings for Bangladesh",
     longDescription: "auto ramadan day (API based)",

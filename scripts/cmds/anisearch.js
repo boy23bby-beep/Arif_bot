@@ -6,7 +6,7 @@ module.exports = {
   config: {
     name: "anisearch",
     version: "0.0.7",
-    author: "Azadx69x",
+    author: "ARIF",
     role: 0,
     category: "anime",
     shortDescription: "Fetch Anisearch video",

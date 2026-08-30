@@ -10,7 +10,7 @@ module.exports = {
   config: {
     name: "vip",
     version: "0.0.7",
-    author: "Azadx69x",
+    author: "ARIF",
     countDown: 5,
     role: 2,
     description: { en: "Add, remove, list VIP users" },

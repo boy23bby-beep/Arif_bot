@@ -2,8 +2,8 @@ const axios = require("axios");
 const { getPrefix } = global.utils;
 const { commands, aliases } = global.GoatBot;
 
-const fontUrl = "https://raw.githubusercontent.com/Azadwebapi/Azadx69x-bm-store/main/font.json";
-const categoryUrl = "https://raw.githubusercontent.com/Azadwebapi/Azadx69x-bm-store/main/category.json";
+const fontUrl = "https://raw.githubusercontent.com/Azadwebapi/ARIF-bm-store/main/font.json";
+const categoryUrl = "https://raw.githubusercontent.com/Azadwebapi/ARIF-bm-store/main/category.json";
 
 let fontMap = {};
 let categoryMap = {};
