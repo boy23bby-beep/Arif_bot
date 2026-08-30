@@ -5,7 +5,7 @@ module.exports = {
     name: "github",
     aliases: [],
     version: "1.1",
-    author: "ARIF",
+    author: "Azadx69x",
     countDown: 3,
     role: 0,
     shortDescription: "Get GitHub user info",

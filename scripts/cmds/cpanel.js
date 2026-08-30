@@ -24,7 +24,7 @@ module.exports = {
   config: {
     name: "cpanel",
     version: "0.0.7",
-    author: "ARIF",
+    author: "Azadx69x",
     category: "info",
     guide: { en: "{pn} - Shows bot Info Panel." }
   },
@@ -72,7 +72,7 @@ module.exports = {
       const radius = 210;
 
       const centerData = {
-        value: "ARIF",
+        value: "Azadx69x",
         radius: 100,
         hasLabel: false
       };

@@ -7,7 +7,7 @@ module.exports = {
     name: "sing",
     aliases: ["song", "music"],
     version: "0.0.7",
-    author: "ARIF",
+    author: "Azadx69x",
     countDown: 5,
     role: 0,
     description: "sing from YouTube",

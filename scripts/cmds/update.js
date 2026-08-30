@@ -10,7 +10,7 @@ module.exports = {
   config: {
     name: "update",
     version: "0.0.7",
-    author: "NTKhang | ARIF",
+    author: "NTKhang | Azadx69x",
     role: 2,
     description: {
       en: "Check for and install updates for the chatbot.",
@@ -112,7 +112,7 @@ module.exports = {
 "│ 📁 আপডেট করার ফাইল\n"+
 "%3%4\n"+
 "├━━━━━━━━━━━━━━━━━┤\n"+
-"│ 🌐 github.com/ncazad/ARIF\n"+
+"│ 🌐 github.com/ncazad/Azadx69x\n"+
 "│ 👍 নিশ্চিত করতে রিঅ্যাক্ট করুন\n"+
 "╰━━━━━━━━━━━━━━━━━╯",
 

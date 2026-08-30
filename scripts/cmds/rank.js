@@ -117,7 +117,7 @@ module.exports = {
     config: {
         name: "rank",
         version: "0.0.7",
-        author: "ARIF",
+        author: "Azadx69x",
         countDown: 5,
         shortDescription: { en: "Rank card" },
         longDescription: { en: "Profile card with your info" },

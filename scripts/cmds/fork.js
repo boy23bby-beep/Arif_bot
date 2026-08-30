@@ -4,7 +4,7 @@ module.exports = {
   config: {
     name: "fork",
     version: "0.0.1",
-    author: "ARIF",
+    author: "Azadx69x",
     countDown: 3,
     role: 0,
     category: "system",
@@ -23,7 +23,7 @@ module.exports = {
       const data = res.data;
 
       const text = `
-ARIF BOT
+Azadx69x BOT
 𝐔𝐩𝐝𝐚𝐭𝐞 𝐅𝐨𝐫𝐤
 
 📦 𝐍𝐚𝐦𝐞: ${data.name}

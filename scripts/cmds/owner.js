@@ -5,7 +5,7 @@ module.exports = {
   config: {
     name: "owner",
     version: "0.0.7",
-    author: "ARIF",
+    author: "Azadx69x",
     category: "owner",
     guide: { en: "view owner info." },
     usePrefix: true

@@ -31,7 +31,7 @@ module.exports = {
     name: "deepseek",
     aliases: ["ai"],
     version: "0.0.7",
-    author: "ARIF",
+    author: "Azadx69x",
     role: 0,
     countDown: 3,
     description: "Chat with DeepSeek AI",

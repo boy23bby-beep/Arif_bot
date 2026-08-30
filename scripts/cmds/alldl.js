@@ -28,7 +28,7 @@ async function downloadVideo(api, event, url) {
 
    if (!res.data) throw new Error("Empty response");
 
-   const msg = `〔 𝐕𝐈𝐃𝐄𝐎 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 〕\n‣ ✅ 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐂𝐨𝐦𝐩𝐥𝐞𝐭𝐞\n‣ 🤖 ARIF BOT`;
+   const msg = `〔 𝐕𝐈𝐃𝐄𝐎 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 〕\n‣ ✅ 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐂𝐨𝐦𝐩𝐥𝐞𝐭𝐞\n‣ 🤖 Azadx69x BOT`;
 
    api.sendMessage({
      body: msg,

@@ -5,7 +5,7 @@ module.exports = {
         name: "quiz",
         aliases: ["qz"],
         version: "0.0.7",
-        author: "ARIF",
+        author: "Azadx69x",
         role: 0,
         category: "game",
     },

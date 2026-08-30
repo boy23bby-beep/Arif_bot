@@ -6,7 +6,7 @@ module.exports = {
 	config: {
 		name: "up2",
 		version: "0.0.7",
-		author: "ARIF",
+		author: "Azadx69x",
 		countDown: 5,
 		role: 0,
 		description: {
@@ -61,7 +61,7 @@ module.exports = {
 
 		const botName = global.GoatBot.config.nickNameBot || "X69X BOT";
 		const botPrefix = global.GoatBot.config.prefix;
-		const botOwner = global.GoatBot.config.owner || "ARIF";
+		const botOwner = global.GoatBot.config.owner || "Azadx69x";
 		const botLanguage = global.GoatBot.config.language || "en";
 		const botAdmin = global.GoatBot.config.adminBot || [];
 

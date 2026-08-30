@@ -79,7 +79,7 @@
     "whiteListIds": [],
     "notes": "if you enable this feature, only the ids in the whiteListIds section can use the bot"
   },
-  "nickNameBot": "ARIF BOT",
+  "nickNameBot": "Azadx69x BOT",
   "prefix": ".",
   "database": {
     "type": "mongodb",
@@ -106,7 +106,7 @@
     "enable": true,
     "expireVerifyCode": 300000,
     "port": 5000,
-    "adminKey": "ARIFADMIN"
+    "adminKey": "Azadx69xADMIN"
   },
   "serverUptime": {
     "enable": false,

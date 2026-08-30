@@ -7,7 +7,7 @@ module.exports = {
     name: "islamicvideo",
     aliases: ["islamicvd"],
     version: "3.1",
-    author: "ARIF",
+    author: "Azadx69x",
     role: 0,
     shortDescription: "Send a random Islamic video",
     category: "islamic",

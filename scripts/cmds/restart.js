@@ -6,7 +6,7 @@ module.exports = {
   config: {
     name: "restart",
     version: "1.6",
-    author: "NTKhang (fixed by ARIF)",
+    author: "NTKhang (fixed by Azadx69x)",
     countDown: 5,
     role: 2,
     description: {

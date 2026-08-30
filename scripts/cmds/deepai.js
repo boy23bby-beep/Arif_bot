@@ -7,7 +7,7 @@ module.exports = {
   config: {
     name: "deepai",
     version: "0.0.7",
-    author: "ARIF",
+    author: "Azadx69x",
     role: 0,
     countDown: 5,
     description: "Generate deepai image",

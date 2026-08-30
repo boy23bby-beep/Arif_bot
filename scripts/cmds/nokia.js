@@ -5,7 +5,7 @@ module.exports = {
     name: "nokia",
     aliases: [],
     version: "0.0.7",
-    author: "ARIF",
+    author: "Azadx69x",
     countDown: 3,
     role: 0,
     shortDescription: "𝐏𝐫𝐨𝐟𝐢𝐥𝐞 𝐩𝐢𝐜𝐭𝐮𝐫𝐞 𝐢𝐧𝐬𝐢𝐝𝐞 𝐚 𝐍𝐨𝐤𝐢𝐚 𝐩𝐡𝐨𝐧𝐞",

@@ -3,7 +3,7 @@ module.exports = {
     name: "supportgc",
     aliases: ["support", "sgc"],
     version: "1.0.0",
-    author: "ARIF",
+    author: "Azadx69x",
     countDown: 10,
     role: 0,
     shortDescription: { en: "Join the X69X support group" },

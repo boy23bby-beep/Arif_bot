@@ -4,7 +4,7 @@ module.exports = {
         config: {
                 name: "leave",
                 version: "1.5",
-                author: "NTKhang (fixed by ARIF)",
+                author: "NTKhang (fixed by Azadx69x)",
                 category: "events"
         },
 

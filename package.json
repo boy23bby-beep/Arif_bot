@@ -65,17 +65,17 @@
     "prod": "NODE_ENV=production node index.js",
     "postinstall": "node patch-fca.js"
   },
-  "author": "ARIF",
+  "author": "Azadx69x",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ncazad/ARIF.git"
+    "url": "git+https://github.com/ncazad/Azadx69x.git"
   },
   "keywords": [],
   "bugs": {
-    "url": "https://github.com/ncazad/ARIF/issues"
+    "url": "https://github.com/ncazad/Azadx69x/issues"
   },
-  "homepage": "https://github.com/ncazad/ARIF#readme",
+  "homepage": "https://github.com/ncazad/Azadx69x#readme",
   "devDependencies": {
     "eslint": "^8.2.0",
     "eslint-config-airbnb": "^19.0.4",

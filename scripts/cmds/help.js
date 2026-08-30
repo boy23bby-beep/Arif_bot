@@ -2,8 +2,8 @@ const axios = require("axios");
 const { getPrefix } = global.utils;
 const { commands, aliases } = global.GoatBot;
 
-const fontUrl = "https://raw.githubusercontent.com/Azadwebapi/ARIF-bm-store/main/font.json";
-const categoryUrl = "https://raw.githubusercontent.com/Azadwebapi/ARIF-bm-store/main/category.json";
+const fontUrl = "https://raw.githubusercontent.com/Azadwebapi/Azadx69x-bm-store/main/font.json";
+const categoryUrl = "https://raw.githubusercontent.com/Azadwebapi/Azadx69x-bm-store/main/category.json";
 
 let fontMap = {};
 let categoryMap = {};
@@ -58,7 +58,7 @@ module.exports = {
   config: {
     name: "help",
     version: "0.0.7",
-    author: "ARIF",
+    author: "Azadx69x",
     role: 0,
     countDown: 5,
     description: { 
@@ -103,7 +103,7 @@ module.exports = {
         cfg.aliases.map(a => `${prefix}${a}`).join(", ") : 
         "❌ 𝗡𝗼𝗻𝗲";
 
-      const helpMessage = `┍━[ 📚 ${toBold("ARIF BOT HELP")} ]━◊
+      const helpMessage = `┍━[ 📚 ${toBold("Azadx69x BOT HELP")} ]━◊
 ┋➥ 📛 ${toBold("Name")}: ${prefix}${cfg.name}
 ┋➥ 🗂️ ${toBold("Category")}: ${getCategoryEmoji(cfg.category)} ${cfg.category || "❌ 𝗨𝗻𝗰𝗮𝘁𝗲𝗴𝗼𝗿𝗶𝘇𝗲𝗱"}
 ┋➥ 📄 ${toBold("Description")}: ${desc}
@@ -141,7 +141,7 @@ ${usage.split('\n').map(line => `┋➥ ${line}`).join('\n')}
       categories[cat].push(c.config.name);
     }
 
-    let msg = `┍━[ 📚 ${toBold("ARIF BOT MENU")} ]━◊\n`;
+    let msg = `┍━[ 📚 ${toBold("Azadx69x BOT MENU")} ]━◊\n`;
 
     const sortedCategories = Object.keys(categories).sort();
 
@@ -169,7 +169,7 @@ ${usage.split('\n').map(line => `┋➥ ${line}`).join('\n')}
     msg += `┍━━━[ 🚀 ${toBold("INFO")} ]━━━◊
 ┋➥ ${toBold("Welcome to arif Bot!")}
 ┋➥ ${toBold("Prefix")}: [ ${prefix} ]
-┋➥ ${toBold("Developer")}: ARIFUL
+┋➥ ${toBold("Developer")}: Azadx69xUL
 ┋➥ ${toBold("Use")}: ${prefix}help <command>
 ┕━━━━━━━━━━━━━━━━◊`;
 
