@@ -10,10 +10,10 @@ const CACHE_DIR = path.join(__dirname, 'cache');
 
 module.exports = {
   config: {
-    name: "animate",
+    name: "animated",
     aliases: ["anim", "video", "genvid"],
     version: "1.1",
-    author: "Neoaz ゐ",
+    author: "arif",
     countDown: 30,
     role: 0,
     longDescription: "Generate animated videos from text prompts using AI.",
