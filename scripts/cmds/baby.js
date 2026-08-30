@@ -7,7 +7,7 @@ module.exports.config = {
     name: "bby",
     aliases: ["baby"],
     version: "0.0.1",
-    author: "ArYAN",
+    author: "arif",
     countDown: 0,
     role: 0,
     description: "update simsim api by Aryan Rayhan",
