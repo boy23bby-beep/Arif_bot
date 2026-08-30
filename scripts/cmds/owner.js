@@ -20,16 +20,16 @@ module.exports = {
     this.sentThreads.set(threadID, true);
 
     const ownerInfo = {
-      name: "𝐦𝐨𝐡𝐚𝐦𝐦𝐚𝐝 𝐚𝐳𝐚𝐝",
-      nick: "𝐚𝐳𝐚𝐝𝐱𝟔𝟗𝐱",
-      age: "𝟏𝟖",
-      gender: "𝐌𝐚𝐥𝐞",
-      from: "𝐁𝐡𝐨𝐥𝐚,𝐁𝐚𝐧𝐠𝐥𝐚𝐝𝐞𝐬𝐡",
-      religion: "𝐈𝐬𝐥𝐚𝐦",
-      status: "𝐒𝐢𝐧𝐠𝐥𝐞",
-      dream: "😛 𝐛𝐨𝐮",
-      hobby: "𝐆𝐚𝐦𝐢𝐧𝐠,𝐜𝐨𝐝𝐢𝐧𝐠",
-    };
+      name: "Ariful islam sabbir",
+nick: "Arif",
+age: "21",
+gender: "𝐌𝐚𝐥𝐞",
+from: "sylhet,𝐁𝐚𝐧𝐠𝐥𝐚𝐝𝐞𝐬𝐡",
+religion: "𝐈𝐬𝐥𝐚𝐦",
+status: "𝐒𝐢𝐧𝐠𝐥𝐞",
+dream: "biye kora",
+hobby: "𝐆𝐚𝐦𝐢𝐧𝐠,𝐜𝐨𝐝𝐢𝐧𝐠"
+  };
 
     const msg = `╔═════ ∘◦ ☆ ◦∘ ═════╗
     🎀  𝐎𝐖𝐍𝐄𝐑  𝐈𝐍𝐅𝐎  🎀
