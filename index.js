@@ -18,7 +18,7 @@ function startProject() {
   }
   lastRestartTime = now;
 
-  const child = spawn("node", ["azadx69x.js"], {
+  const child = spawn("node", ["arif.js"], {
     cwd: __dirname,
     stdio: "inherit",
     shell: true,
@@ -28,7 +28,7 @@ function startProject() {
   child.on("close", (code) => {
     if (code === 2) {
       restartCount = 0;
-      log.info("INDEX", "Restarting bot (requested via restart command)");
+      log.info("INDEX", "Restarting arif bot (requested via restart command)");
       setTimeout(startProject, 3000);
     } else if (code !== 0) {
       restartCount++;
@@ -36,12 +36,12 @@ function startProject() {
       log.info("INDEX", `Bot crashed (code ${code}). Restarting in ${delay}ms... (attempt ${restartCount})`);
       setTimeout(startProject, delay);
     } else {
-      log.info("INDEX", "Bot shut down normally");
+      log.info("INDEX", "arif Bot shut down normally");
     }
   });
 
   child.on("error", (err) => {
-    log.err("INDEX", "Failed to start azadx69x.js:", err.message);
+    log.err("INDEX", "Failed to start arif.js:", err.message);
     restartCount++;
     const delay = getRestartDelay();
     setTimeout(startProject, delay);
