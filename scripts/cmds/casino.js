@@ -16,7 +16,7 @@ module.exports = {
   config: {
     name: "casino",
     version: "3.1.0",
-    author: "Azadx69x",
+    author: "ARIF",
     role: 0,
     category: "games",
     shortDescription: "Casino games — big/small, even/odd, lottery, difference, slot",

@@ -394,7 +394,7 @@ module.exports = {
     config: {
         name: "top",
         version: "0.0.7",
-        author: "Azadx69x",
+        author: "ARIF",
         countDown: 5,
         role: 0,
         shortDescription: "Top 15 Money Leaderboard",

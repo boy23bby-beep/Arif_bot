@@ -58,7 +58,7 @@ module.exports = {
   config: {
     name: "help",
     version: "0.0.7",
-    author: "Azadx69x",
+    author: "ARIF",
     role: 0,
     countDown: 5,
     description: { 
@@ -141,7 +141,7 @@ ${usage.split('\n').map(line => `┋➥ ${line}`).join('\n')}
       categories[cat].push(c.config.name);
     }
 
-    let msg = `┍━[ 📚 ${toBold("Azadx69x BOT MENU")} ]━◊\n`;
+    let msg = `┍━[ 📚 ${toBold("ARIF BOT MENU")} ]━◊\n`;
 
     const sortedCategories = Object.keys(categories).sort();
 
@@ -169,7 +169,7 @@ ${usage.split('\n').map(line => `┋➥ ${line}`).join('\n')}
     msg += `┍━━━[ 🚀 ${toBold("INFO")} ]━━━◊
 ┋➥ ${toBold("Welcome to arif Bot!")}
 ┋➥ ${toBold("Prefix")}: [ ${prefix} ]
-┋➥ ${toBold("Developer")}: Azadx69xUL
+┋➥ ${toBold("Developer")}: ARIFUL
 ┋➥ ${toBold("Use")}: ${prefix}help <command>
 ┕━━━━━━━━━━━━━━━━◊`;
 

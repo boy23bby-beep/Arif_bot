@@ -6,7 +6,7 @@ module.exports = {
   config: {
     name: "time",
     version: "0.0.7",
-    author: "Azadx69x",
+    author: "ARIF",
     role: 0,
     shortDescription: "Show current time",
     longDescription: "Generates image with current time and date",

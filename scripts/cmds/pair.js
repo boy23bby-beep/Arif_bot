@@ -8,7 +8,7 @@ const recentPairs = new Map();
 module.exports = {
   config: {
     name: "pair",
-    author: "Azadx69x",
+    author: "ARIF",
     version: "0.0.7",
     role: 0,
     shortDescription: "Pair",

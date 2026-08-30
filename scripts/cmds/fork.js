@@ -4,7 +4,7 @@ module.exports = {
   config: {
     name: "fork",
     version: "0.0.1",
-    author: "Azadx69x",
+    author: "ARIF",
     countDown: 3,
     role: 0,
     category: "system",

@@ -28,7 +28,7 @@ module.exports = {
     aliases: ["trans"],
     version: "0.2.1",
     role: 0,
-    author: "Azadx69x",
+    author: "ARIF",
     category: "utility",
     cooldowns: 3
   },

@@ -5,7 +5,7 @@ module.exports = {
     config: {
         name: "file",
         version: "0.0.7",
-        author: "Azadx69x",
+        author: "ARIF",
         countDown: 3,
         role: 0,
         shortDescription: "𝐛𝐨𝐭 𝐟𝐢𝐥𝐞",

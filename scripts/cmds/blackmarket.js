@@ -25,7 +25,7 @@ module.exports = {
     name: "blackmarket",
     aliases: ["bm","cs"],
     version: "1.6",
-    author: "Azadx69x",
+    author: "ARIF",
     role: 0,
     shortDescription: toBold("𝐬𝐡𝐨𝐰 𝐛𝐥𝐚𝐜𝐤𝐦𝐚𝐫𝐤𝐞𝐭 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬"),
     category: toBold("market")

@@ -6,7 +6,7 @@ module.exports = {
   config: {
     name: "leave",
     version: "0.0.7",
-    author: "Azadx69x",
+    author: "ARIF",
     countDown: 5,
     role: 2,
     shortDescription: "Leave group chats",

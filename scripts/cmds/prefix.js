@@ -5,7 +5,7 @@ module.exports = {
   config: {
     name: "prefix",
     version: "0.0.7",
-    author: "Azadx69x",
+    author: "ARIF",
     countDown: 5,
     role: 0,
     shortDescription: "Prefix manager",

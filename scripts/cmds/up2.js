@@ -6,7 +6,7 @@ module.exports = {
 	config: {
 		name: "up2",
 		version: "0.0.7",
-		author: "Azadx69x",
+		author: "ARIF",
 		countDown: 5,
 		role: 0,
 		description: {

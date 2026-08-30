@@ -24,7 +24,7 @@ module.exports = {
   config: {
     name: "cpanel",
     version: "0.0.7",
-    author: "Azadx69x",
+    author: "ARIF",
     category: "info",
     guide: { en: "{pn} - Shows bot Info Panel." }
   },
