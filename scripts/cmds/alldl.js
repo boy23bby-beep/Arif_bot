@@ -28,7 +28,7 @@ async function downloadVideo(api, event, url) {
 
    if (!res.data) throw new Error("Empty response");
 
-   const msg = `〔 𝐕𝐈𝐃𝐄𝐎 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 〕\n‣ ✅ 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐂𝐨𝐦𝐩𝐥𝐞𝐭𝐞\n‣ 🤖 𝐗𝟔𝟗𝐗 𝐁𝐎𝐓 𝐕𝟑`;
+   const msg = `〔 𝐕𝐈𝐃𝐄𝐎 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 〕\n‣ ✅ 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐂𝐨𝐦𝐩𝐥𝐞𝐭𝐞\n‣ 🤖 ARIF BOT`;
 
    api.sendMessage({
      body: msg,
@@ -58,7 +58,7 @@ module.exports = {
  config: {
    name: "alldl",
    version: "0.0.7",
-   author: "Azadx69x",
+   author: "arif",
    role: 0,
    category: "media",
    description: "Fast video download from FB, TikTok, IG, YouTube"
