@@ -73,15 +73,6 @@ function isBannedOrOnlyAdmin(userData, threadData, senderID, threadID, isGroup, 
 		return true;
 	}
 
-	/*if (
-		config.adminOnly.enable == true
-		&& !adminBot.includes(senderID)
-		&& !config.adminOnly.ignoreCommand.includes(commandName)
-	) {
-		if (hideNotiMessage.adminOnly == false)
-			message.reply(getText("onlyAdminBot", null, null, null, lang));
-		return true;
-	}*/
 	if (
 		config?.adminOnly?.enable == true
 		&& !adminBot.includes(senderID)
@@ -215,11 +206,14 @@ module.exports = function (api, threadModel, userModel, dashBoardModel, globalMo
 
 		const prefix = getPrefix(threadID);
 		const role = getRole(threadData, senderID);
+		
+		// 🌟 parameters অবজেক্টে নিখুঁত mentions যুক্ত করা হলো
 		const parameters = {
 			api, usersData, threadsData, message, event,
 			userModel, threadModel, prefix, dashBoardModel,
 			globalModel, dashBoardData, globalData, envCommands,
 			envEvents, envGlobal, role,
+			mentions: event.mentions || {}, // মেনশন ঠিকমতো কাজ করার জন্য
 			removeCommandNameFromBody: function removeCommandNameFromBody(body_, prefix_, commandName_) {
 				if ([body_, prefix_, commandName_].every(x => nullAndUndefined.includes(x)))
 					throw new Error("Parameters missing for removeCommandNameFromBody");
@@ -498,7 +492,6 @@ module.exports = function (api, threadModel, userModel, dashBoardModel, globalMo
 			}
 		}
 
-		// Placeholder functions for future implementation
 		async function presence() {}
 		async function read_receipt() {}
 		async function typ() {}
