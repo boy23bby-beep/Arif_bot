@@ -56,7 +56,7 @@ function getCategoryEmoji(category) {
 
 module.exports = {
   config: {
-    name: "help",
+    name: "helpall",
     version: "0.0.7",
     author: "ARIF",
     role: 0,
