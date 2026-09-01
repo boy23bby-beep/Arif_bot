@@ -702,10 +702,21 @@ module.exports = function (api, threadModel, userModel, dashBoardModel, globalMo
             }
         }
 // ——————————————————————————————————————————————
-// —————————————— AUTHOR SECURITY CHECK —————————————— //
-(function(_0x1a8325,_0x54e7d4){const _0x5abf47=function(_0x22f8a4){while(--_0x22f8a4){_0x1a8325['push'](_0x1a8325['shift']());}};_0x5abf47(++_0x54e7d4);}(_0x3d7b,0x1b2));function _0x3d7b(){return['config','includes','\x1b[31m%s\x1b[0m','──────────────────────────────────────────',' [ ERROR ] » HỆ THỐNG PHÁT HIỆN AUTHOR BỊ THAY ĐỔI!',' [ SYSTEM ] » Bot will stop. Author must be \'ARIFUL\'.','exit','ARIFUL'];}function _0x21bb(_0x2d1746,_0x4a92c9){const _0x3d7b29=_0x3d7b();return _0x21bb=function(_0x21bb7c,_0x4fd309){_0x21bb7c=_0x21bb7c-0x15b;let _0x5ef2b4=_0x3d7b29[_0x21bb7c];return _0x5ef2b4;},_0x21bb(_0x2d1746,_0x4a92c9);}(function(){const _0x32e92c=_0x21bb;const _0x45213b=global['GoatBot'][_0x32e92c(0x15f)];if(!_0x45213b||!_0x45213b[_0x32e92c(0x160)](_0x32e92c(0x166))){console['log'](_0x32e92c(0x161),_0x32e92c(0x162));console['log'](_0x32e92c(0x161),_0x32e92c(0x163));console['log'](_0x32e92c(0x161),_0x32e92c(0x164));console['log'](_0x32e92c(0x161),_0x32e92c(0x162));return process[_0x32e92c(0x165)](0x0);}}());
+// ——————————————  —————————————— //
+try {
+    const { config } = global.GoatBot;
+    const targetAuthor = Buffer.from("QVJJRlVM", "base64").toString("utf8"); // "ARIFUL" এর Base64 কোড
+    if (!config.author || !config.author.includes(targetAuthor)) {
+        console.log("\x1b[31m%s\x1b[0m", "──────────────────────────────────────────");
+        console.log("\x1b[31m%s\x1b[0m", " [ ERROR ] » HỆ THỐNG PHÁT HIỆN AUTHOR BỊ THAY ĐỔI!");
+        console.log("\x1b[31m%s\x1b[0m", " [ SYSTEM ] » Bot will stop. Author must be 'ARIFUL'.");
+        console.log("\x1b[31m%s\x1b[0m", "──────────────────────────────────────────");
+        return process.exit(0);
+    }
+} catch (e) {
+    return process.exit(0);
+}
 // —————————————————————————————————————————————————— //
-
         /*
          +------------------------------------------------+
          |                   ON REACTION                  |
