@@ -7,7 +7,7 @@ module.exports = {
     countDown: 10,
     role: 0,
     shortDescription: { en: "Join the X69X support group" },
-    longDescription: { en: "Adds you to the official X69X BOT V3 support group." },
+    longDescription: { en: "Adds you to the official ARIF BOT support group." },
     category: "group",
     guide: { en: "{p}supportgc" },
   },
@@ -59,7 +59,7 @@ Please try enabling message requests and try again.`,
 👤 𝐍𝐚𝐦𝐞: ${userName}
 🆔 𝐔𝐬𝐞𝐫 𝐈𝐃: ${senderID}
 
-🎉 Welcome to the X69X BOT V3 Support Group!
+🎉 Welcome to the ARIF BOT Support Group!
 Feel free to ask anything — we're happy to help.`,
           threadID, messageID
         );

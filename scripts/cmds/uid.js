@@ -2,7 +2,7 @@ module.exports = {
     config: {
         name: "uid",
         version: "2.2.1",
-        author: "Developer",
+        author: "ARIF",
         countDown: 5,
       category: "boxchat",
         role: 0,

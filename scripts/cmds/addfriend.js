@@ -102,7 +102,7 @@ module.exports = {
                 `❌ | Failed: ${failed}\n` +
                 `⏭️ | Skipped Already Friends: ${skipped}\n` +
                 `\n` +
-                `🤖 | X69X BOT V3`;
+                `🤖 | ARIF BOT`;
 
             return message.reply(report);
 

@@ -119,8 +119,8 @@ if (subTitle.length > maxWidth) {
 else {
         subTitleArray.push(subTitle);
 }
-const author = ("Made by Azadx69x");
-const srcUrl = ("Source code: https://github.com/ncazad/X69X-BOT-V3");
+const author = ("Made by ARIFUL");
+const srcUrl = ("Source code: https://github.com/boy23bby-beep/Arif_bot");
 const fakeRelease = ("ALL VERSIONS NOT RELEASED HERE ARE FAKE");
 
 // Apply beautiful colors to all text

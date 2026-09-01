@@ -78,7 +78,7 @@ async function convertFont(api, threadID, messageID, styleNum, text) {
 
 async function showFontList(threadID, api, messageID) {
   let message = `╭━━━━━━━━━━━━━━━╮\n│    𝗔𝗟𝗟 𝗙𝗢𝗡𝗧 𝗦𝗧𝗬𝗟𝗘𝗦\n├━━━━━━━━━━━━━━━┤\n`;
-  const previewText = "Azadx69x";
+  const previewText = "ARIF BOT";
 
   for (let i = 1; i <= 30; i++) {
     try {
