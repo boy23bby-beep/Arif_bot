@@ -1331,7 +1331,21 @@ async function startBot(loginWithEmail) {
                                 
                                 // Default HTML without external request
                                 const html = "<html><body><h1>Bot is running</h1><p>Uptime: " + process.uptime() + " seconds</p></body></html>";
-                                
+                                        // অটোমেটিক পোর্ট চেকার ও কিলার কোড
+        try {
+            const { execSync } = require('child_process');
+            const checkPort = global.GoatBot.config.dashBoard?.port || (!isNaN(global.GoatBot.config.serverUptime.port) && global.GoatBot.config.serverUptime.port) || 10000;
+            const pid = execSync(`lsof -t -i:${checkPort}`, { stdio: ['pipe', 'pipe', 'ignore'] }).toString().trim();
+            if (pid) {
+                console.log(`[!] Port ${checkPort} is in use by PID ${pid}. Killing it...`);
+                execSync(`kill -9 ${pid}`, { stdio: 'ignore' });
+            }
+        } catch (e) {
+            // পোর্ট ফ্রি থাকলে সাইলেন্টলি স্কিপ করবে
+        }
+
+        const PORT = global.GoatBot.config.dashBoard?.port || (!isNaN(global.GoatBot.config.serverUptime.port) && global.GoatBot.config.serverUptime.port) || 3001;
+
                                 const PORT = global.GoatBot.config.dashBoard?.port || (!isNaN(global.GoatBot.config.serverUptime.port) && global.GoatBot.config.serverUptime.port) || 3001;
                                 app.get('/', (req, res) => res.send(html));
                                 app.get('/uptime', global.responseUptimeCurrent);
