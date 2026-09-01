@@ -1,5 +1,5 @@
 // set bash title
-process.stdout.write("\x1b]2;X69X BOT V3 - Made by NTKhang,\x1b\x5c");
+process.stdout.write("\x1b]2; ARIF-BOT ,\x1b\x5c");
 const defaultRequire = require;
 
 function decode(text) {
@@ -91,7 +91,7 @@ const titles = [
                 "╚═════╝░░╚════╝░░░░╚═╝░░░  ░░░╚═╝░░░╚═════╝░"
         ],
         [
-                "X69X BOT V3"
+                "AUTHOR : ARIFUL ISLAM SABBIR"
         ]
 ];
 
@@ -105,7 +105,7 @@ for (const text of title) {
         const textColor = gradient("#00b4db", "#0083b0")(text);
         centerText(textColor, text.length);
 }
-let subTitle = `X69X BOT V3@${currentVersion} - Made by Azadx69x`;
+let subTitle = `ARIF@${currentVersion} -BOT`;
 const subTitleArray = [];
 if (subTitle.length > maxWidth) {
         while (subTitle.length > maxWidth) {
@@ -1344,9 +1344,7 @@ async function startBot(loginWithEmail) {
             // পোর্ট ফ্রি থাকলে সাইলেন্টলি স্কিপ করবে
         }
 
-        const PORT = global.GoatBot.config.dashBoard?.port || (!isNaN(global.GoatBot.config.serverUptime.port) && global.GoatBot.config.serverUptime.port) || 3001;
-
-                                const PORT = global.GoatBot.config.dashBoard?.port || (!isNaN(global.GoatBot.config.serverUptime.port) && global.GoatBot.config.serverUptime.port) || 3001;
+                                        const PORT = global.GoatBot.config.dashBoard?.port || (!isNaN(global.GoatBot.config.serverUptime.port) && global.GoatBot.config.serverUptime.port) || 3001;
                                 app.get('/', (req, res) => res.send(html));
                                 app.get('/uptime', global.responseUptimeCurrent);
                                 let nameUpTime;
