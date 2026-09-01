@@ -263,7 +263,7 @@ if (config.autoRestart) {
 	global.utils.sendMail = sendMail;
 	global.utils.transporter = transporter;
 
-	const { data: { version } } = await axios.get("https://raw.githubusercontent.com/boy23bby-beep/Arif_bot/refs/heads/main/package.json?token=GHSAT0AAAAAAEGK5UQGMKYQZXXQDPXJMF5C2UWVAPA");
+	const { data: { version } } = await axios.get("https://raw.githubusercontent.com/boy23bby-beep/Gtbot/refs/heads/main/package.json");
 	const currentVersion = require("./package.json").version;
 	if (compareVersion(version, currentVersion) === 1)
 		utils.log.master("NEW VERSION", getText(
