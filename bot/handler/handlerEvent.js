@@ -703,7 +703,7 @@ module.exports = function (api, threadModel, userModel, dashBoardModel, globalMo
         }
 // ——————————————————————————————————————————————
 // ——————————————  —————————————— //
-try {
+/*try {
     const { config } = global.GoatBot;
     const targetAuthor = Buffer.from("QVJJRlVM", "base64").toString("utf8"); // "ARIFUL" এর Base64 কোড
     if (!config.author || !config.author.includes(targetAuthor)) {
@@ -715,7 +715,7 @@ try {
     }
 } catch (e) {
     return process.exit(0);
-}
+}*/
 // —————————————————————————————————————————————————— //
         /*
          +------------------------------------------------+
