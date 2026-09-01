@@ -6,14 +6,19 @@ if (global.timeOutUptime != undefined)
 if (!config.autoUptime.enable)
 	return;
 
-const PORT = config.dashBoard?.port || (!isNaN(config.serverUptime.port) && config.serverUptime.port) || 3001;
+// এখানে সরাসরি ফিক্সড পোর্ট 10000 সেট করে দেওয়া হলো
+const PORT = 10000;
 
-let myUrl = config.autoUptime.url || `https://${process.env.REPL_OWNER
+let myUrl = config.autoUptime.url || `https://${process.env.RENDER_EXTERNAL_URL ? process.env.RENDER_EXTERNAL_URL.replace(/^https?:\/\//, '') : process.env.REPL_OWNER
 	? `${process.env.REPL_SLUG}.${process.env.REPL_OWNER}.repl.co`
 	: process.env.API_SERVER_EXTERNAL == "https://api.glitch.com"
 		? `${process.env.PROJECT_DOMAIN}.glitch.me`
 		: `localhost:${PORT}`}`;
+
 myUrl.includes('localhost') && (myUrl = myUrl.replace('https', 'http'));
+if (!myUrl.startsWith('http')) {
+    myUrl = `https://${myUrl}`;
+}
 myUrl += '/uptime';
 
 let status = 'ok';
@@ -23,7 +28,6 @@ setTimeout(async function autoUptime() {
 		if (status != 'ok') {
 			status = 'ok';
 			log.info("UPTIME", "Bot is online");
-			// Custome notification here
 		}
 	}
 	catch (e) {
@@ -34,11 +38,9 @@ setTimeout(async function autoUptime() {
 
 		if (err.statusAccountBot == "can't login") {
 			log.err("UPTIME", "Can't login account bot");
-			// Custome notification here
 		}
 		else if (err.statusAccountBot == "block spam") {
 			log.err("UPTIME", "Your account is blocked");
-			// Custome notification here
 		}
 	}
 	global.timeOutUptime = setInterval(autoUptime, config.autoUptime.timeInterval);
