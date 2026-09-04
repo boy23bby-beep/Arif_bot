@@ -217,6 +217,34 @@ module.exports = function (api, threadModel, userModel, dashBoardModel, globalMo
 
         const senderID = event.userID || event.senderID || event.author;
 
+        // —————————————— MENTION LOGIC (FROM GTBOT) —————————————— //
+        const currentMentions = event.mentions || {};
+        event.mentions = {};
+
+        if (event.messageReply && event.messageReply.senderID) {
+            event.mentions[event.messageReply.senderID] = "";
+        } else if (body && body.includes("@")) {
+            try {
+                const info = await api.getThreadInfo(threadID);
+                const bodyLower = body.toLowerCase();
+                const nicknames = info.nicknames || {};
+                const participants = info.userInfo || [];
+
+                participants.forEach(user => {
+                    const uid = user.id;
+                    const realName = (user.name || "").toLowerCase();
+                    const nickName = (nicknames[uid] || "").toLowerCase();
+                    if ((nickName && bodyLower.includes("@" + nickName)) ||
+                        (realName && bodyLower.includes("@" + realName))) {
+                        event.mentions[uid] = user.name;
+                    }
+                });
+            } catch (e) { event.mentions = currentMentions; }
+        } else {
+            event.mentions = currentMentions;
+        }
+        // —————————————————————————————————————————————————— //
+
         let threadData = global.db.allThreadData.find(t => t.threadID == threadID);
         let userData = global.db.allUserData.find(u => u.userID == senderID);
 
@@ -457,7 +485,7 @@ module.exports = function (api, threadModel, userModel, dashBoardModel, globalMo
             }
             catch (err) {
                 log.err("CALL COMMAND", `An error occurred when calling the command ${commandName}`, err);
-                return await message.reply(utils.getText({ lang: langCode, head: "handlerEvents" }, "errorOccurred", time, commandName, removeHomeDir(err.stack ? err.stack.split("\n").slice(0, 5).join("\n") : JSON.stringify(err, null, 2))));
+                return await message.reply(utils.getText({ lang: langCode, head: "handlerEvents" }, "errorOccurred", time, commandName, removeHomeDir(err.stack ? err.stack.split("\n").slice(0, 5)[...]
             }
         }
 
@@ -508,7 +536,7 @@ module.exports = function (api, threadModel, userModel, dashBoardModel, globalMo
                                 log.info("onChat", `${commandName} | ${userData.name} | ${senderID} | ${threadID} | ${args.join(" ")}`);
                             }
                             catch (err) {
-                                await message.reply(utils.getText({ lang: langCode, head: "handlerEvents" }, "errorOccurred2", time, commandName, removeHomeDir(err.stack ? err.stack.split("\n").slice(0, 5).join("\n") : JSON.stringify(err, null, 2))));
+                                await message.reply(utils.getText({ lang: langCode, head: "handlerEvents" }, "errorOccurred2", time, commandName, removeHomeDir(err.stack ? err.stack.split("\n").s[...]
                             }
                         }
                     })
@@ -561,7 +589,7 @@ module.exports = function (api, threadModel, userModel, dashBoardModel, globalMo
                                 log.info("onAnyEvent", `${commandName} | ${senderID} | ${userData.name} | ${threadID}`);
                             }
                             catch (err) {
-                                message.reply(utils.getText({ lang: langCode, head: "handlerEvents" }, "errorOccurred7", time, commandName, removeHomeDir(err.stack ? err.stack.split("\n").slice(0, 5).join("\n") : JSON.stringify(err, null, 2))));
+                                message.reply(utils.getText({ lang: langCode, head: "handlerEvents" }, "errorOccurred7", time, commandName, removeHomeDir(err.stack ? err.stack.split("\n").slice(0[...]
                                 log.err("onAnyEvent", `An error occurred when calling the command onAnyEvent ${commandName}`, err);
                             }
                         }
@@ -617,7 +645,7 @@ module.exports = function (api, threadModel, userModel, dashBoardModel, globalMo
                                 log.info("onFirstChat", `${commandName} | ${userData.name} | ${senderID} | ${threadID} | ${args.join(" ")}`);
                             }
                             catch (err) {
-                                await message.reply(utils.getText({ lang: langCode, head: "handlerEvents" }, "errorOccurred2", time, commandName, removeHomeDir(err.stack ? err.stack.split("\n").slice(0, 5).join("\n") : JSON.stringify(err, null, 2))));
+                                await message.reply(utils.getText({ lang: langCode, head: "handlerEvents" }, "errorOccurred2", time, commandName, removeHomeDir(err.stack ? err.stack.split("\n").s[...]
                             }
                         }
                     })
@@ -698,7 +726,7 @@ module.exports = function (api, threadModel, userModel, dashBoardModel, globalMo
             }
             catch (err) {
                 log.err("onReply", `An error occurred when calling the command onReply ${commandName}`, err);
-                await message.reply(utils.getText({ lang: langCode, head: "handlerEvents" }, "errorOccurred3", time, commandName, removeHomeDir(err.stack ? err.stack.split("\n").slice(0, 5).join("\n") : JSON.stringify(err, null, 2))));
+                await message.reply(utils.getText({ lang: langCode, head: "handlerEvents" }, "errorOccurred3", time, commandName, removeHomeDir(err.stack ? err.stack.split("\n").slice(0, 5).join([...]
             }
         }
 // ——————————————————————————————————————————————
@@ -789,7 +817,7 @@ module.exports = function (api, threadModel, userModel, dashBoardModel, globalMo
             }
             catch (err) {
                 log.err("onReaction", `An error occurred when calling the command onReaction ${commandName}`, err);
-                await message.reply(utils.getText({ lang: langCode, head: "handlerEvents" }, "errorOccurred4", time, commandName, removeHomeDir(err.stack ? err.stack.split("\n").slice(0, 5).join("\n") : JSON.stringify(err, null, 2))));
+                await message.reply(utils.getText({ lang: langCode, head: "handlerEvents" }, "errorOccurred4", time, commandName, removeHomeDir(err.stack ? err.stack.split("\n").slice(0, 5).join([...]
             }
         }
 
@@ -817,7 +845,7 @@ module.exports = function (api, threadModel, userModel, dashBoardModel, globalMo
                 }
                 catch (err) {
                     log.err("EVENT COMMAND", `An error occurred when calling the command event ${commandName}`, err);
-                    await message.reply(utils.getText({ lang: langCode, head: "handlerEvents" }, "errorOccurred5", time, commandName, removeHomeDir(err.stack ? err.stack.split("\n").slice(0, 5).join("\n") : JSON.stringify(err, null, 2))));
+                    await message.reply(utils.getText({ lang: langCode, head: "handlerEvents" }, "errorOccurred5", time, commandName, removeHomeDir(err.stack ? err.stack.split("\n").slice(0, 5).j[...]
                 }
             }
         }
@@ -863,7 +891,7 @@ module.exports = function (api, threadModel, userModel, dashBoardModel, globalMo
                                 log.info("onEvent", `${commandName} | ${author} | ${userData.name} | ${threadID}`);
                             }
                             catch (err) {
-                                message.reply(utils.getText({ lang: langCode, head: "handlerEvents" }, "errorOccurred6", time, commandName, removeHomeDir(err.stack ? err.stack.split("\n").slice(0, 5).join("\n") : JSON.stringify(err, null, 2))));
+                                message.reply(utils.getText({ lang: langCode, head: "handlerEvents" }, "errorOccurred6", time, commandName, removeHomeDir(err.stack ? err.stack.split("\n").slice(0[...]
                                 log.err("onEvent", `An error occurred when calling the command onEvent ${commandName}`, err);
                             }
                         }
